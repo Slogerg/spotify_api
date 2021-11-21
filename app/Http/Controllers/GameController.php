@@ -48,9 +48,7 @@ class GameController extends Controller
 
             Cache::put(
                 'playlist',
-                $this->spotifyApi->getUserPlaylistTracks('officialcharts','5GEf0fJs9xBPr5R4jEQjtw',[
-                    'offset' => $offset,
-                ]),
+                $this->spotifyApi->getPlaylistTracks('4OSIkmIjmBFz5monq4GqVj'),
                 2
             );
         }
